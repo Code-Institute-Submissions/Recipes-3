@@ -2,4 +2,4 @@ node_modules
 .venv/
 .vscode/
 env.py
-_pycache_
+_pycache_/
