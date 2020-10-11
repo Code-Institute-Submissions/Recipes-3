@@ -1,5 +1,5 @@
 import os
-from flask import Flask, render_template, redirect, request, url_for
+from flask import (Flask, render_template, redirect, request, url_for)
 from flask_pymongo import PyMongo
 from bson.objectid import ObjectId
 
@@ -13,7 +13,8 @@ mongo = PyMongo(app)
 @app.route("/", methods=["GET", "POST", "DELETE"])
 @app.route("/get_recipes")
 def get_recipes():
-    return render_template("recipes.html", recipes=mongo.db.tasks.find())
+    recipes = mongo.db.recipes.find()
+    return render_template("recipes.html", recipes=recipes)
 
 
 if __name__ == "__main__":
