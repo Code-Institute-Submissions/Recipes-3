@@ -7,7 +7,7 @@ if os.path.exists("env.py"):
 app = Flask(__name__)
 
 
-@app.route("/")
+@app.route("/", methods=["GET", "POST", "DELETE"])
 def hello():
     return "Hello World ... again!"
 
