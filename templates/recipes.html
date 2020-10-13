@@ -1,8 +1,8 @@
-<html>
-  <head>
+  {% extends "base.html" %}
+  {% block content %}
 
-  </head>
-  <body>
+      <h2>I'm extending the base template</h2>
+
       {% for recipe in recipes %}
           {{recipe.recipe_name}}<br>
           {{recipe.category}}<br>
@@ -10,8 +10,7 @@
           {{recipe.soup_name}}<br>
           {{recipe.soup_ingredients}}<br>
           {{recipe.soup_directions}}<br>
-          
-          
       {% endfor %}
-  </body>
-</html>
+
+
+{% endblock %}
