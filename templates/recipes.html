@@ -1,37 +1,27 @@
 {% extends "base.html" %}
 {% block content %}
 
-      <h2>I'm extending the base template</h2>
-
-          {{recipe.recipe_name}}<br>
-          {{recipe.category}}<br>
-          {{recipe.category_name}}<br>
-          {{recipe.soup_name}}<br>
-          {{recipe.soup_ingredients}}<br>
-          {{recipe.soup_directions}}<br>
-      
-
 <ul class="collapsible">
-   {% for recipe in recipes %}
-        <li>
-          <div class="collapsible-header"><i class="material-icons">filter_drama</i>
-          {{recipe.recipe_name}} - {{recipe.category}} -{{recipe.soup_name}}
-          </div>
-          <div class="collapsible-body">
-            <span>
-              {{recipe.soup_ingredients}} - {{recipe.soup_directions}}
-            </span>
-          </div>
-        </li>
-        <li>
-          <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
-          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-        </li>
-        <li>
-          <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-          <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-        </li>
-   {% endfor %}
+  {% for recipe in recipes %}
+  <li>
+    <div class="collapsible-header"><i class="material-icons">filter_drama</i>
+      {{recipe.recipe_name}} - {{recipe.category}} -{{recipe.soup_name}}
+    </div>
+    <div class="collapsible-body">
+      <span>
+        {{recipe.soup_ingredients}} - {{recipe.soup_directions}}
+      </span>
+    </div>
+  </li>
+  <li>
+    <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+  </li>
+  <li>
+    <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+  </li>
+  {% endfor %}
 </ul>
 
 {% endblock %}
