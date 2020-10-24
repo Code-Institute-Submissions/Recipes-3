@@ -24,8 +24,44 @@
     </div>
   </li>
   <li>
-    <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-    <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+    <div class="collapsible-header"><i class="material-icons">expand_more</i>
+      <strong>{{recipe.category_steak}} - {{recipe.steak_name}}</strong>
+    </div>
+    <div class="collapsible-body">
+      <span>
+        {{recipe.steak_ingredients}}<br><br> {{recipe.steak_directions}}
+      </span>
+    </div>
+  </li>
+  <li>
+    <div class="collapsible-header"><i class="material-icons">expand_more</i>
+      <strong>{{recipe.category_beef}} - {{recipe.beef_name}}</strong>
+    </div>
+    <div class="collapsible-body">
+      <span>
+        {{recipe.beef_ingredients}}<br><br> {{recipe.beef_directions}}
+      </span>
+    </div>
+  </li>
+  <li>
+    <div class="collapsible-header"><i class="material-icons">expand_more</i>
+      <strong>{{recipe.category_cheesecake}} - {{recipe.cheesecake_name}}</strong>
+    </div>
+    <div class="collapsible-body">
+      <span>
+        {{recipe.cheesecake_ingredients}}<br><br> {{recipe.cheesecake_directions}}
+      </span>
+    </div>
+  </li>
+  <li>
+    <div class="collapsible-header"><i class="material-icons">expand_more</i>
+      <strong>{{recipe.category_oreo}} - {{recipe.oreo_name}}</strong>
+    </div>
+    <div class="collapsible-body">
+      <span>
+        {{recipe.oreo_ingredients}}<br><br> {{recipe.oreo_directions}}
+      </span>
+    </div>
   </li>
   {% endfor %}
 </ul>
