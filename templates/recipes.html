@@ -5,51 +5,10 @@
   {% for recipe in recipes %}
   <li>
     <div class="collapsible-header"><i class="material-icons">expand_more</i>
-      <strong>{{recipe.category_name}} : {{recipe.soup_name}} </strong>
+      <strong>{{recipe.recipe_category}} - {{recipe.soup_name}} </strong>
     </div>
     <div class="collapsible-body">
       <span>{{recipe.soup_ingredients}}<br><br> {{recipe.soup_directions}}</span>
-    </div>
-  </li>
-  <li>
-    <div class="collapsible-header"><i class="material-icons">expand_more</i>
-      <strong>{{recipe.category_name}} : {{recipe.salmon_name}}</strong>
-    </div>
-    <div class="collapsible-body">
-      <span>{{recipe.salmon_ingredients}}<br><br> {{recipe.salmon_directions}}</span>
-    </div>
-  </li>
-  <li>
-    <div class="collapsible-header"><i class="material-icons">expand_more</i>
-      <strong>{{recipe.category_name}} : {{recipe.steak_name}} </strong>
-    </div>
-    <div class="collapsible-body">
-      <span>{{recipe.steak_ingredients}}<br><br> {{recipe.steak_directions}}</span>
-    </div>
-  </li>
-  <li>
-    <div class="collapsible-header"><i class="material-icons">expand_more</i>
-      <strong>{{recipe.category_name}} : {{recipe.beef.name}} </strong>
-    </div>
-    <div class="collapsible-body">
-      <span>{{recipe.beef_ingredients}}<br><br> {{recipe.beef_directions}}<span>
-    </div>
-  </li>
-  <li>
-    <div class="collapsible-header"><i class="material-icons">expand_more</i>
-      <strong>{{recipe.category_name}} : {{recipe.cheesecake_name}}</strong>
-    </div>
-    <div class="collapsible-body">
-      <strong></strong>
-      <span>{{recipe.cheesecake_ingredients}}<br><br> {{recipe.cheesecake_directions}}</span>
-    </div>
-  </li>
-  <li>
-    <div class="collapsible-header"><i class="material-icons">expand_more</i>
-      <strong>{{recipe.category_name}} : {{recipe.oreo_name}}</strong>
-    </div>
-    <div class="collapsible-body">
-      <span>{{recipe.oreo_ingredients}}<br><br> {{recipe.oreo_directions}}</span>
     </div>
   </li>
   {% endfor %}
