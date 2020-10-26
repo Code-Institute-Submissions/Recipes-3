@@ -5,56 +5,51 @@
   {% for recipe in recipes %}
   <li>
     <div class="collapsible-header"><i class="material-icons">expand_more</i>
-      <strong>{{recipe.category_name}}</strong>
+      <strong>{{recipe.category_name}} : {{recipe.soup_name}} </strong>
     </div>
     <div class="collapsible-body">
-      <strong>{{recipe.soup_name}}</strong>
       <p>{{recipe.soup_ingredients}}<br><br> {{recipe.soup_directions}}</p>
     </div>
   </li>
   <li>
     <div class="collapsible-header"><i class="material-icons">expand_more</i>
-      <strong>{{recipe.category_name}}</strong>
+      <strong>{{recipe.category_name}} : {{recipe.salmon_name}}</strong>
     </div>
     <div class="collapsible-body">
-      <strong>{{recipe.salmon_name}}</strong>
       <p>{{recipe.salmon_ingredients}}<br><br> {{recipe.salmon_directions}}</p>
     </div>
   </li>
   <li>
     <div class="collapsible-header"><i class="material-icons">expand_more</i>
-        <strong>{{recipe.category_name}}</strong>
+        <strong>{{recipe.category_name}} : {{recipe.steak_name}} </strong>
     </div>
     <div class="collapsible-body">
-        <strong>{{recipe.steak_name}}</strong>
         <p>{{recipe.steak_ingredients}}<br><br> {{recipe.steak_directions}}</p>
     </div>
   </li>
   <li>
     <div class="collapsible-header"><i class="material-icons">expand_more</i>
-      <strong>{{recipe.category_name}}</strong>
+      <strong>{{recipe.category_name}} : {{recipe.beef.name}} </strong>
     </div>
     <div class="collapsible-body">
-        <strong>{{recipe.beef.name}}</strong>
         <p>{{recipe.beef_ingredients}}<br><br> {{recipe.beef_directions}}</p>
     </div>
   </li>
   <li>
     <div class="collapsible-header"><i class="material-icons">expand_more</i>
-      <strong>{{recipe.category_name}}</strong>
+      <strong>{{recipe.category_name}} : {{recipe.cheesecake_name}}</strong>
     </div>
     <div class="collapsible-body">
-      <strong>{{recipe.cheesecake_name}}</strong>
+      <strong></strong>
       <p>{{recipe.cheesecake_ingredients}}<br><br> {{recipe.cheesecake_directions}}</p>
     </div>
   </li>
   <li>
     <div class="collapsible-header"><i class="material-icons">expand_more</i>
-      <strong>{{recipe.category_name}}</strong>
+      <strong>{{recipe.category_name}} : {{recipe.oreo_name}}</strong>
     </div>
     <div class="collapsible-body">
-        <strong>{{recipe.oreo_name}}</strong>
-        <p></p>{{recipe.oreo_ingredients}}<br><br> {{recipe.oreo_directions}}</p>
+        <p>{{recipe.oreo_ingredients}}<br><br> {{recipe.oreo_directions}}</p>
     </div>
   </li>
   {% endfor %}
