@@ -5,7 +5,7 @@
   {% for recipe in recipes %}
   <li>
     <div class="collapsible-header"><i class="material-icons">expand_more</i>
-      <strong>{{recipe.soup_name}}</strong>
+      <strong>{{recipe.category_name}} - {{recipe.soup_name}}</strong>
     </div>
     <div class="collapsible-body">
       <p>{{recipe.soup_ingredients}}<br><br> {{recipe.soup_directions}}</p>
@@ -13,7 +13,7 @@
   </li>
   <li>
     <div class="collapsible-header"><i class="material-icons">expand_more</i>
-      <strong>{{recipe.category_salmon}} - {{recipe.salmon_name}}</strong>
+      <strong>{{recipe.category_name}} - {{recipe.salmon_name}}</strong>
     </div>
     <div class="collapsible-body">
       <p>{{recipe.salmon_ingredients}}<br><br> {{recipe.salmon_directions}}</p>
@@ -21,7 +21,7 @@
   </li>
   <li>
     <div class="collapsible-header"><i class="material-icons">expand_more</i>
-      <strong>{{recipe.category_steak}} - {{recipe.steak_name}}</strong>
+      <strong>{{recipe.category_name}} - {{recipe.steak_name}}</strong>
     </div>
     <div class="collapsible-body">
       <span>
@@ -31,7 +31,7 @@
   </li>
   <li>
     <div class="collapsible-header"><i class="material-icons">expand_more</i>
-      <strong>{{recipe.category_beef}} - {{recipe.beef_name}}</strong>
+      <strong>{{recipe.category_name}} - {{recipe.beef_name}}</strong>
     </div>
     <div class="collapsible-body">
       <span>
