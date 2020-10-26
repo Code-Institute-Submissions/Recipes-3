@@ -5,10 +5,10 @@
   {% for recipe in recipes %}
   <li>
     <div class="collapsible-header"><i class="material-icons">expand_more</i>
-      <strong>{{recipe.recipe_category}} - {{recipe.soup_name}} </strong>
+      <strong>{{recipe.recipe_category}} - {{recipe.recipe_name}} </strong>
     </div>
     <div class="collapsible-body">
-      <p>{{recipe.soup_ingredients}}<br><br> {{recipe.soup_directions}}</p>
+      <p>{{recipe.recipe_ingredients}}<br><br> {{recipe.recipe_directions}}</p>
     </div>
   </li>
   {% endfor %}
