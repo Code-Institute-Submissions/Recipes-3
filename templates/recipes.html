@@ -31,12 +31,13 @@
   </li>
   <li>
     <div class="collapsible-header"><i class="material-icons">expand_more</i>
-      <strong>{{recipe.category_name}} - {{recipe.beef_name}}</strong>
+      <strong>{{recipe.beef_name}}</strong>
     </div>
     <div class="collapsible-body">
-      <span>
-        {{recipe.beef_ingredients}}<br><br> {{recipe.beef_directions}}
-      </span>
+
+        {{recipe.category.name}}
+        <p>{{recipe.beef_ingredients}}<br><br> {{recipe.beef_directions}}</p>
+      
     </div>
   </li>
   <li>
