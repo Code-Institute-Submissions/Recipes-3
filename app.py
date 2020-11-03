@@ -29,6 +29,18 @@ def add_recipe():
     category_list = [category for category in _categories]
     return render_template("add_recipe.html", categories = category_list)
 
+@app.route("/insert_recipe", methods=["POST"])
+def insert_recipe():
+    recipes = mongo.db.recipes
+    recipes.insert_one(request.form.to_dict())
+    return redirect(url_for("get_recipes"))
+
+@app.route("/edit_recipe"/<recipe_id>")
+def edit_recipe(recipe_id):
+    the_recipe = mongo.db.recipes.find.one({"_id": ObjectId(task_id)})
+    all_categories = mongo.db.categories.find()
+    return render_template("editrecipe.html", recipe=the_recipe, categories=all_categories)
+
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
