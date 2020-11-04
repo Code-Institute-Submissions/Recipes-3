@@ -35,9 +35,9 @@ def insert_recipe():
     recipes.insert_one(request.form.to_dict())
     return redirect(url_for("get_recipes"))
 
-@app.route("/edit_recipe"/<recipe_id>")
+@app.route("/edit_recipe/<recipe_id>")
 def edit_recipe(recipe_id):
-    the_recipe = mongo.db.recipes.find.one({"_id": ObjectId(task_id)})
+    the_recipe = mongo.db.recipes.find.one({"_id": ObjectId(recipe_id)})
     all_categories = mongo.db.categories.find()
     return render_template("editrecipe.html", recipe=the_recipe, categories=all_categories)
 
