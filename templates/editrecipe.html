@@ -8,23 +8,21 @@
         <div class="row">
             <div class="input-field col s12">
                 <select id="category" name="recipe_category">
-                    <option value="" disabled selected>Choose your option</option>
-                    {% for cat in categories %}
-                    <option value="{{cat.recipe_category}}">{{cat.recipe_category}}</option>
+                    <option value="" disabled selected>Recipe Category</option>
+                    {% for category in categories %}
+                    {% if category.name == recipe.name %}
+                    <option value="{{category.name}}" selected>{{category.name}}</option>
+                    {% else %}
+                    <option value="{{category.name}}">{{category.name}}</option>
+                    {% endif %}
                     {% endfor %}
-                    <label>Materialize Select</label>
+                    <label>Recipe Category</label>
                 </select>
             </div>
         </div>
-        <div class="row">
             <div class="input-field col s12">
                 <i class="fas fa-user-circle prefix light-blue-text text-darken-4"></i>
-                <input id="category" name="recipe_category" type="text" class="validate">
-                <label for="icon_prefix">Recipe Category</label>
-            </div>
-            <div class="input-field col s12">
-                <i class="fas fa-user-circle prefix light-blue-text text-darken-4"></i>
-                <input id="recipe_name" name="recipe_name" type="text" class="validate">
+                <input id="recipe_name" name="recipe_name" type="text" class="validate" value="{{recipe.recipe_name}}">
                 <label for="icon_prefix">Recipe Name</label>
             </div>
             <div class="input-field col s12">

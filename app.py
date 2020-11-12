@@ -25,9 +25,10 @@ def get_recipes():
 
 @app.route("/add_recipe")
 def add_recipe():
-    _categories = mongo.db.categories.find()
-    category_list = [category for category in _categories]
-    return render_template("add_recipe.html", categories = category_list)
+    category_list = mongo.db.categories.find()
+    print(category_list)
+    # import pdb ; pdb.set_trace()
+    return render_template("add_recipe.html", categories=category_list)
 
 @app.route("/insert_recipe", methods=["POST"])
 def insert_recipe():
