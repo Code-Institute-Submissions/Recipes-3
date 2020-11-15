@@ -4,14 +4,14 @@
 <h3 class="light-green-text text-darken-4 center-align">Edit Recipe</h3>
 
 <div class="row">
-    <form action="{{ url_for('insert_recipe') }}" method="POST" class="col s12">
+    <form action="{{ url_for('update_recipe', recipe_id=recipe._id) }}"  method="POST" class="col s12">
         <div class="row">
             <div class="input-field col s12">
                 <select id="category" name="recipe_category">
                     <option value="" disabled selected>Recipe Category</option>
                     {% for category in categories %}
-                    {% if category.name == recipe.name %}
-                    <option value="{{category.name}}" selected>{{category.name}}</option>
+                    {% if category.name == recipe.recipe_category %}
+                    <option value="{{recipe.recipe_category}}" selected>{{recipe.recipe_category}}</option>
                     {% else %}
                     <option value="{{category.name}}">{{category.name}}</option>
                     {% endif %}
@@ -27,17 +27,17 @@
             </div>
             <div class="input-field col s12">
                 <i class="fas fa-phone prefix light-blue-text text-darken-4"></i>
-                <input id="recipe_ingredients" name="recipe_ingredients" type="text" class="validate">
-                <label for="icon_telephone">Recipe Ingredients</label>
+                <input id="recipe_ingredients" name="recipe_ingredients" type="text" class="validate" value="{{recipe.recipe_ingredients}}">
+                <label for="icon_telephone">Recipe Ingridients</label>
             </div>
             <div class="input-field col s12">
                 <i class="fas fa-phone prefix light-blue-text text-darken-4"></i>
-                <input id="recipe_directions" name="recipe_directions" type="text" class="validate">
+                <input id="recipe_directions" name="recipe_directions" type="text" class="validate" value="{{recipe.recipe_directions}}">
                 <label for="icon_telephone">Recipe Directions</label>
             </div>
         </div>
         <div class="row">
-            <button class="btn waves-effect waves-light" type="submit" name="action">Add Recipe
+            <button class="btn waves-effect waves-light" type="submit" name="action">Edit Recipe
                 <i class="material-icons right">playlist_addd</i>
             </button>
         </div>
