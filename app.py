@@ -49,7 +49,7 @@ def update_recipe(recipe_id):
     {   'recipe_name':request.form.get('recipe_name'),
         'recipe_category':request.form.get('recipe_category'),
         'recipe_ingredients': request.form.get('recipe_ingredients'),
-        'recipe_diretions': request.form.get('recipe_directions'),
+        'recipe_directions': request.form.get('recipe_directions'),
     })
     return redirect(url_for("get_recipes"))
 
@@ -68,13 +68,27 @@ def edit_category(category_id):
     return render_template('editcategory.html', 
     category=mongo.db.categories.find_one({'_id': ObjectId(category_id)}))
 
-@app.route('/update_category/<category_id>')
+@app.route('/update_category/<category_id>', methods=['GET', 'POST'] )
 def update_category(category_id):
     mongo.db.categories.update(
         {'_id': ObjectId(category_id)},
         {'name': request.form.get('name')})
-    return redirect(url_for('get_categories'))  
-    
+    return redirect(url_for('get_categories'))
+
+@app.route('/delete_category/<category_id>')
+def delete_category(category_id):
+	mongo.db.categories.remove({'_id': ObjectId(category_id)})
+	return redirect(url_for('get_categories'))
+
+@app.route('/insert_category', methods=["POST"])
+def insert_category():
+    categories = mongo.db.categories
+    categories.insert_one(request.form.to_dict())
+    return redirect(url_for("get_categories"))
+
+@app.route('/add_category')
+def add_category():
+    return render_template('addcategory.html')   
 
 
 if __name__ == "__main__":
