@@ -2,7 +2,7 @@
 # Mile-3 
 
 ## Milestone Three Project
-This project represents a Flask application which is backed by MongoDB database, it uses HTML, CSS, and Python languages to make it function.  It is a recipe app which follows strictly all CRUD requirements set by Code Institute. The user is able to add, read, edit, and delete recipes and categories from the frontend interface of the app through python routes directly to MongoDB database. Interesting cooking ideas or elaborate recipes can be shared just with a couple of clicks. The app target is literally everyone who is fascinated by cooking and needs a cooking book where he or she can exchange ideas or add to already existing recipes. 
+This project represents a Flask application which is backed by MongoDB database, it uses HTML, CSS, and Python languages to make it function.  It is a recipe app which follows strictly all CRUD requirements set by Code Institute. The user is able to add, read, edit, and delete recipes and categories from the frontend interface of the app through python routes directly to MongoDB database. Novice cooking ideas or elaborate recipes can be shared just with a couple of clicks. The app target is literally everyone who is fascinated by cooking and needs a cooking book where he or she can exchange ideas or add to already existing recipes. 
 By default, the project comes with six recipes for a Shrimps Soup, Pan-Seared Salmon with Baby Bok Choy and Shiitake Mushrooms, Flank Steak with Charred Vidalia Onion Salad, Classic Roast Beef, Chocolate Peppermint Cheesecake, and Oreo Truffles. There’re also three categories such as soups, meals, and deserts.
 The project is fully based on Code Institute’s videos which are to be removed on 30th of November 2020. For me personally, it would be quite impossible to complete this project without the help of these videos. The mere fact that so much new technology in terms of languages (python), framework (Flask), database (mongoDB), materialize and deployment through heroku was very overwhelming. Again, pressurized by time, I am working full time, I managed to make it fully functional without focusing too much on style and design. Even with the help of the videos, tutors, and my mentor linking all that new to me technology was a hassle which took months of developing.
 ## UX and Design
@@ -39,13 +39,13 @@ Of course, mobile first approach has been leading
 
 * [Mockflow]( https://www.mockflow.com/) – to sketch my wireframe, free wireframe resource 
 
-Testing and Debugging
+## Testing and Debugging
 
 Did really helpful testing and debugging on my select drop down menu. Of course, with the help of my mentor. Basically, the select drop down was not dropping and giving different categories as options. Hence, placing # import pdb ; pdb.set_trace() after the line you want to test, it breaks the code. The function gave back that my categories are 0, instead of 3. That’s how I found that I have a typo in declaring that collection in MongoDB. Screenshots are attached below. 
 
-* [DebuggingI]()
-* [DebuggingII]()
-* [DebuggingIII]()
+* [DebuggingI](https://github.com/Web-Cookie/Recipes/blob/main/assets/Debugging%20Python%201.PNG)
+* [DebuggingII](https://github.com/Web-Cookie/Recipes/blob/main/assets/debugging%20py%202.PNG)
+* [DebuggingIII](https://github.com/Web-Cookie/Recipes/blob/main/assets/debugging%20py%203.PNG)
 
 
 The rest of the code html code was tested through [W3C Validator](https://validator.w3.org/)
