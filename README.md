@@ -10,8 +10,13 @@ As I already specified, did not focus too much on the design, but making python 
 Of course, mobile first approach has been leading 
 
 #### Skeleton
-* [Desktop](https://github.com/Web-Cookie/Mile-2/blob/master/assets/wireframe/Mile-2%20Desktop.PNG)
-* [Mobile Version](https://github.com/Web-Cookie/Mile-2/blob/master/assets/wireframe/Mile-2%20Mobile.PNG)
+* [DesktopI]( https://github.com/Web-Cookie/Recipes/blob/main/assets/Milestone_3%20Desctop%20I.PNG)
+* [DesktopII]( https://github.com/Web-Cookie/Recipes/blob/main/assets/Milestone%203%20Desctop%20II.PNG)
+* [DesktopIII]( https://github.com/Web-Cookie/Recipes/blob/main/assets/Milestone%203%20Desctop%20III.PNG)
+* [MobileVersionI]( https://github.com/Web-Cookie/Recipes/blob/main/assets/Milestone%203%20Mobile%20I.PNG)
+* [MobileVersionII]( https://github.com/Web-Cookie/Recipes/blob/main/assets/Milestone%203%20Mobile%20II.PNG)
+* [MobileVersionIII]( https://github.com/Web-Cookie/Recipes/blob/main/assets/Milestone%203%20Mobile%20III.PNG)
+
 
 
 ## Technologies
@@ -25,11 +30,11 @@ Of course, mobile first approach has been leading
 * [VSCode] ((https://code.visualstudio.com/) – is text editor that I am currently using)
 * [Materialize]( https://materializecss.com/) – has been used big time to create the desired framework of my web-site
 
-*[Git & Github](https://github.com/) – for storing and backing up externally 
+* [Git & Github](https://github.com/) – for storing and backing up externally 
 
-*[Gitpod]( https://www.gitpod.io/) – for sharing my workspace with Code Institute’s tutors, so the latter would be able to help better and faster
+* [Gitpod]( https://www.gitpod.io/) – for sharing my workspace with Code Institute’s tutors, so the latter would be able to help better and faster
 
-*[Heroku] (https://dashboard.heroku.com/apps) – hosting platform to store the code, you can run the app from that platform, something that github cannot do. Github cannot run python files 
+* [Heroku] (https://dashboard.heroku.com/apps) – hosting platform to store the code, you can run the app from that platform, something that github cannot do. Github cannot run python files 
 
 
 * [Mockflow]( https://www.mockflow.com/) – to sketch my wireframe, free wireframe resource 
@@ -38,6 +43,9 @@ Testing and Debugging
 
 Did really helpful testing and debugging on my select drop down menu. Of course, with the help of my mentor. Basically, the select drop down was not dropping and giving different categories as options. Hence, placing # import pdb ; pdb.set_trace() after the line you want to test, it breaks the code. The function gave back that my categories are 0, instead of 3. That’s how I found that I have a typo in declaring that collection in MongoDB. Screenshots are attached below. 
 
+* [DebuggingI]()
+* [DebuggingII]()
+* [DebuggingIII]()
 
 
 The rest of the code html code was tested through [W3C Validator](https://validator.w3.org/)
